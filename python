@@ -1,0 +1,19 @@
+#una tienda de ropa tiene porcentajes de descuento segun la edad,
+#personas mayores o iguales a 30 tienen un 35 % de descuento
+#personas entre 20 y 29 años  ambos inclusive tienen un 30 % de descuento
+#personas entre 10 y 19 años  ambos inclusive tienen un 20 % de descuento
+#los menores de 10 años tienen un 10 % de descuento.
+# realizar un programa que solicita el ingreso de edad y entrega el porcentaje de descuento como valor como un valor flotante entre 0 y 100.
+######
+edad=int(input("ingrese su edad :" ))
+descuento=0.0
+if edad >30:
+   descuento=0.35
+elif edad>20:
+    descuento=0.3
+elif edad >10:
+    descuento=0.2
+else :
+    descuento=0.1
+print("el porcentaje de descuento es : ",100*descuento,"%")
+
